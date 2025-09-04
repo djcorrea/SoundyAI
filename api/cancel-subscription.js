@@ -164,7 +164,6 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('❌ Erro completo ao cancelar assinatura:', error);
     console.error('❌ Stack trace:', error.stack);
-    
     return res.status(500).json({ 
       error: 'Erro interno do servidor ao cancelar assinatura',
       details: error.message,
