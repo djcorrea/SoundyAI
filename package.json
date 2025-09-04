@@ -27,7 +27,7 @@
     "mercadopago": "^2.8.0",
     "node-fetch": "^2.6.7"
   },
-  "main": "index.js",
+  "main": "server.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
