@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server-test.js",
+    "start": "node server.js",
     "dev": "vercel dev",
     "dev:upload": "node dev-server.js",
     "build:refs": "node tools/reference-builder.js",
