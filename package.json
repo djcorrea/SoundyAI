@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
     "dev": "vercel dev",
     "dev:upload": "node dev-server.js",
-    "start": "node server.js",
     "build:refs": "node tools/reference-builder.js",
     "validate:refs": "node tools/reference-validator.js",
     "calibrate:refs": "node tools/ref-calibrator.js",
