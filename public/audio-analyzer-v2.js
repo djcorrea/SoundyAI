@@ -1477,4 +1477,4 @@ AudioAnalyzerV2.prototype.computeAverageSpectrumCompact = function(channel, samp
 		out[i] = c? s/c : 0;
 	}
 	return out;
-};
+};  
