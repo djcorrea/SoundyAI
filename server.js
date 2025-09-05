@@ -12,6 +12,7 @@ app.use(express.json());
 // rota da API
 app.use("/api/chat", chatRouter);
 
+
 // rota raiz só para o Railway não dar 502
 app.get("/", (req, res) => {
   res.send("✅ SoundyAI rodando no Railway!");
@@ -21,4 +22,11 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Servidor rodando na porta ${PORT}`);
+});
+process.on("uncaughtException", err => {
+  console.error("💥 Uncaught Exception:", err);
+});
+
+process.on("unhandledRejection", reason => {
+  console.error("💥 Unhandled Rejection:", reason);
 });
